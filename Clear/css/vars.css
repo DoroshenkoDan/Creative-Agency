@@ -1,0 +1,10 @@
+:root {
+	--container-width: 1440px;
+	--container-padding: 1em;
+	--index: calc(1vw + 1vh);
+	--text-color-primary: #ffffff;
+	--text-color-secondary: #6d95fc;
+	--black-color: #000;
+	--header-gradient: #101010;
+	--main-gradient: rgba(109, 149, 252, 0.3);
+}

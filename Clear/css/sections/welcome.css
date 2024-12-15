@@ -1,0 +1,99 @@
+/* ---Section-Welcome--- */
+.section-welcome-wrapper {
+	position: relative;
+	z-index: 3;
+	height: fit-content;
+	overflow: hidden;
+}
+
+.section-welcome-wrapper::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		to left,
+		var(--main-gradient) 10%,
+		transparent calc(var(--index) * 30)
+	);
+	z-index: 3;
+}
+.section-welcome {
+	padding-top: 183px;
+	padding-bottom: 183px;
+}
+
+.section-welcome-content {
+	position: relative;
+	z-index: 4;
+}
+
+.section-welcome-content span,
+h3 {
+	color: var(--text-color-secondary);
+}
+
+.section-welcome-content p,
+h2 {
+	color: var(--text-color-primary);
+	padding: 43px 0px;
+}
+
+.section-welcome-content h3 {
+	font-size: 1.325em;
+	font-family: Poppins;
+	font-weight: 500;
+	letter-spacing: 0.145em;
+}
+.section-welcome-content h2 {
+	text-wrap: wrap;
+	font-family: Poppins;
+	font-size: 4em;
+	font-weight: 700;
+	letter-spacing: 0.015em;
+	position: relative;
+}
+.section-welcome-content h2 > span {
+	text-wrap: wrap;
+}
+.section-welcome-content h2::after {
+	content: '';
+	border: 1px solid var(--text-color-secondary);
+	width: 144px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.section-welcome-content p {
+	font-family: Poppins;
+	font-size: 1.325em;
+	font-weight: 300;
+	max-width: 697px;
+}
+
+.button-section-welcome {
+	padding: 10px 16px;
+}
+
+@media screen and (min-width: 768px) {
+	.section-welcome-wrapper::before {
+		content: '';
+		background-image: url('../../img/beautiful-woman-with-big-jewel\ 1.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		position: absolute;
+		z-index: 2;
+		right: -20%;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.section-welcome-content h2 {
+		font-size: 5em;
+	}
+}

@@ -1,0 +1,40 @@
+.section-achivments-wrapper {
+	background: rgb(21, 21, 21);
+	background: linear-gradient(
+		55deg,
+		rgba(21, 21, 21, 0.2) 30%,
+		rgba(109, 149, 252, 0.2) 100%
+	);
+}
+.section-achivments {
+	display: flex;
+	flex-direction: column;
+	gap: 12.5%;
+	justify-content: center;
+	align-items: center;
+	padding: 70px 0;
+}
+
+.section-acivments__item {
+	text-align: center;
+}
+.section-acivments__item h3 {
+	font-family: Poppins;
+	font-size: 4em;
+	font-weight: 700;
+	color: var(--text-color-primary);
+	padding: 8px 0;
+}
+.section-acivments__item p {
+	font-family: Poppins;
+	font-size: 1.3125em;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	color: var(--text-color-secondary);
+}
+
+@media screen and (min-width: 768px) {
+	.section-achivments {
+		flex-direction: row;
+	}
+}
